@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -7,34 +10,42 @@
 
 /* Body Styling */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
     line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 /* Container */
 .container {
-    background: #ffffff;
+    background: #1e1e1e; /* Slightly lighter dark for container */
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     max-width: 800px;
-    width: 90%;
+    width: 100%;
 }
 
 /* Header */
 header {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #2d3748;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #bbbbbb;
     text-align: center;
 }
 
@@ -43,6 +54,17 @@ main p {
     font-size: 1.125rem;
     text-align: justify;
     text-indent: 1em;
+    margin-bottom: 20px;
+}
+
+main a {
+    color: #bb86fc; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -50,6 +72,24 @@ footer {
     margin-top: 30px;
     text-align: center;
     font-size: 0.9rem;
-    color: #a0aec0;
+    color: #757575;
 }
 
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}
